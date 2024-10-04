@@ -1,0 +1,77 @@
+/* Attribution style from front-end mentor. */
+.attribution { font-size: 11px; text-align: center; }
+a.footer:hover {
+  color: white;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  font-optical-sizing: auto;
+  src: url(https://fonts.google.com/specimen/Young+Serif);
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-optical-sizing: auto;
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+body{
+    background-color: hsl(24,5%,18%);
+    font-family: Outfit, sans-serif;
+}
+
+/* Headers */
+h1{
+    font-family: Young Serif;
+    font-weight: 400;
+}
+
+h2{
+    font-family: Young Serif;
+    font-weight: 400;
+    color: hsl(332,51%,32%);
+}
+
+h3{
+    font-family: Young Serif;
+    font-weight: 400;
+    color: hsl(14,45%,36%);
+}
+
+/* Style for boxes */
+.rose{
+    background-color: hsl(330,100%,98%);
+}
+
+.white{
+    background-color: white;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdcorners {
+    border-radius: 10%;
+  }
+
+  /* Line */
+  hr.line{
+    border-top: 1em solid hsl(30,10%,34%);
+  }
+
+  /* Table */
+  td.red{
+    color: hsl(14,45%,36%);
+    font-weight: 600;
+  }
+
+  td.border{
+    border-bottom: 1em solid hsl(30,10%,34%));
+  }
