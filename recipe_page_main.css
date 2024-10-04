@@ -1,7 +1,10 @@
 /* Attribution style from front-end mentor. */
 .attribution { font-size: 11px; text-align: center; }
+a.footer:link, a.footer:visited{
+    color: hsl(332,51%,32%);
+}
 a.footer:hover {
-  color: white;
+  color: hsl(330,100%,98%);
 }
 
 @font-face {
@@ -11,32 +14,44 @@ a.footer:hover {
 }
 
 @font-face {
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     src: url(https://fonts.google.com/specimen/Outfit);
 }
 
 body{
-    background-color: hsl(24,5%,18%);
+    background-color: hsl(30, 54%, 90%);
     font-family: Outfit, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
 }
 
-/* Headers */
+/* Headers and text color*/
 h1{
     font-family: Young Serif;
-    font-weight: 400;
+    font-weight: 600;
+    color: hsl(24, 5%, 18%);
 }
 
 h2{
-    font-family: Young Serif;
-    font-weight: 400;
+    font-family: Outfit, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
     color: hsl(332,51%,32%);
+    padding-top: 0em;
+    margin-top: 1em;
 }
 
 h3{
     font-family: Young Serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.5em;
     color: hsl(14,45%,36%);
+}
+
+p.stone{
+    color: hsl(30, 10%, 34%);
 }
 
 /* Style for boxes */
@@ -51,27 +66,93 @@ h3{
 .flex-container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: 90vw;
     justify-content: center;
     align-items: center;
+    padding: 5em 5em;
 }
 
 .rdcorners {
-    border-radius: 10%;
+    border-radius: 1em;
+    width: 100%;
+    height: fit-content;
+    padding: 2em 2em;
+    box-sizing: border-box;
+  }
+
+  .rdcornerstwo{
+    border-radius: 1em;
+    width: 100%;
+    height: fit-content;
+    padding: 1em 1em;
+    box-sizing: border-box;
   }
 
   /* Line */
   hr.line{
-    border-top: 1em solid hsl(30,10%,34%);
+    border-top: 1px solid hsl(30, 18%, 87%);
   }
 
   /* Table */
+table.general{
+    width: 100%;
+    border-collapse: collapse;
+}
+
   td.red{
     color: hsl(14,45%,36%);
     font-weight: 600;
   }
 
-  td.border{
-    border-bottom: 1em solid hsl(30,10%,34%));
+  td.stone{
+    color: hsl(30, 10%, 34%);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
+
+  td.border{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+  }
+
+  /* Image */
+  img.banner{
+    width: 100%;
+    border-radius: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Lists */
+ol.alignleft{
+    padding-left: 0.5em;
+}
+
+ul.alignleft{
+    padding-left: 1.5em;
+}
+
+  li.space{
+    padding-top: 0.5em;
+  }
+
+  ul li{
+    padding-left: 0.5em;
+  }
+
+  ol { 
+    list-style: none; 
+    counter-reset: num; 
+} 
+
+ol li { 
+    counter-increment: num; 
+} 
+
+ol li::before { 
+    content: counter(num) ". ";
+    font-weight: 600;
+    color: hsl(332,51%,32%); 
+}
