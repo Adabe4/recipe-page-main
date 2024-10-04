@@ -92,6 +92,7 @@ p.stone{
   /* Line */
   hr.line{
     border-top: 1px solid hsl(30, 18%, 87%);
+    margin-top: 1.5em;
   }
 
   /* Table */
@@ -119,40 +120,25 @@ table.general{
   /* Image */
   img.banner{
     width: 100%;
-    border-radius: 3%;
+    border-radius: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* Lists */
-ol.alignleft{
+/* Lists */
+li::marker{
+    color: hsl(332,51%,32%);
+}
+
+li{
     padding-left: 0.5em;
 }
 
-ul.alignleft{
+.alignleft{
     padding-left: 1.5em;
 }
 
   li.space{
     padding-top: 0.5em;
   }
-
-  ul li{
-    padding-left: 0.5em;
-  }
-
-  ol { 
-    list-style: none; 
-    counter-reset: num; 
-} 
-
-ol li { 
-    counter-increment: num; 
-} 
-
-ol li::before { 
-    content: counter(num) ". ";
-    font-weight: 600;
-    color: hsl(332,51%,32%); 
-}
